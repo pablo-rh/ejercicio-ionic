@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="container-photo">
+    <ion-avatar class="profile-photo">
+      <img src="{{ img }}">
+    </ion-avatar>
+    <ion-label color="primary" class="name-user">{{name}}</ion-label>
+  </div>
+
+  <div class="user-email">
+    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+    <ion-label color="secondary"> {{ email }}</ion-label>
+  </div>
+
+  <div class="info-personal">
+    <ion-chip>
+      <ion-avatar>
+        <ion-icon name="chatbubbles-outline"></ion-icon>
+      </ion-avatar>
+      <ion-label>Mensajes</ion-label>
+    </ion-chip>
+    <ion-chip>
+      <ion-avatar>
+        <ion-icon name="briefcase"></ion-icon>
+      </ion-avatar>
+      <ion-label>Empresa</ion-label>
+    </ion-chip>
+    <ion-chip>
+      <ion-avatar>
+        <ion-icon name="color-palette-outline"></ion-icon>
+      </ion-avatar>
+      <ion-label>Pasatiempo</ion-label>
+    </ion-chip>
+    <ion-chip>
+      <ion-avatar>
+        <ion-icon name="home"></ion-icon>
+      </ion-avatar>
+      <ion-label>Ciudad</ion-label>
+    </ion-chip>
+    <ion-chip>
+      <ion-avatar>
+        <ion-icon name="book"></ion-icon>
+      </ion-avatar>
+      <ion-label>Formación</ion-label>
+    </ion-chip>
+  </div>
+  <ion-button color="dark" expand="block" (click)="returnList()">
+    <ion-icon name="arrow-undo"></ion-icon>
+  </ion-button>
+</ion-content>
